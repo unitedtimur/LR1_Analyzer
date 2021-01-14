@@ -1,4 +1,4 @@
-#LR1_ANALYZER
+##LR1_ANALYZER
 
 #### What is this?
 An LR parser is a parser for the source code of programs written in a programming language that reads the input stream from left to right and produces the most right-handed output of a context-free grammar. The term LR(k) is also used)- analyzer, where k expresses the number of unread preview characters in the input stream, on the basis of which decisions are made in the analysis. Usually k is equal to 1 and is often omitted.
