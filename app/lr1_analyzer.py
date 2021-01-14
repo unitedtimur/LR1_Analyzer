@@ -1,6 +1,6 @@
-from non_terminals import NonTerminals
-from syntax_table import SyntaxTable
-from terminals import Terminals
+from app.non_terminals import NonTerminals
+from app.syntax_table import SyntaxTable
+from app.terminals import Terminals
 
 
 class LR1:
@@ -56,10 +56,10 @@ class LR1:
             elif action == 'ex':
                 return f'Yeah! Check it out ;)\n' \
                        f'RPN: {reverse_polish_notation}\n' \
-                       f'Сonvolution(Analysis): {convolution}'
+                       f'Сonvolution (Analysis): {convolution}'
             # It's bad
             elif action == 'er':
                 return f'Oh know, smth wrong! ;(\n' \
                        f'RPN: {reverse_polish_notation}\n' \
-                       f'Сonvolution(Analysis): {convolution}'
+                       f'Сonvolution (Analysis): {convolution}'
 

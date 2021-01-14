@@ -1,4 +1,4 @@
-from lr1_analyzer import LR1
+from app.lr1_analyzer import LR1
 
 
 def main():

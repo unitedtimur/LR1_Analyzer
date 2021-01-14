@@ -1,4 +1,4 @@
-##LR1_ANALYZER
+## LR1_ANALYZER
 
 #### What is this?
 An LR parser is a parser for the source code of programs written in a programming language that reads the input stream from left to right and produces the most right-handed output of a context-free grammar. The term LR(k) is also used)- analyzer, where k expresses the number of unread preview characters in the input stream, on the basis of which decisions are made in the analysis. Usually k is equal to 1 and is often omitted.
@@ -11,3 +11,14 @@ A deterministic context-free language is a language for which some LR(k) grammar
 The LR analyzer is based on an algorithm driven by an analysis table, a data structure that contains the syntax of the language being analyzed. Thus, the term LR analyzer actually refers to a class of analyzers that can parse almost any programming language for which an analysis table is provided. The analysis table is created by the parser generator.
 
 LR analysis can be generalized as an arbitrary analysis of a context-free language without loss of performance, even for LR (k) grammars. This is due to the fact that most programming languages can be expressed by an LR (k) grammar, where k is a small constant (usually 1). Note that parsing non-LR (k) grammars is an order of magnitude slower (cubic instead of quadratic with respect to the size of the input stream).
+
+## Example 
+
+1. Input: (a+b)*c
+
+2. Result: 
+   
+   RPN (Reverse Polish notation): ['a', 'b', '+', 'c', '*']
+   
+   Сonvolution (Analysis): [6, 4, 2, 6, 4, 1, 5, 4, 6, 3, 2]
+   
